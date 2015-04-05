@@ -56,7 +56,7 @@ class Compare(unittest.TestCase):
                 except:
                     print("  '%s' is not in this page" % (fields[m]))
                     errors += 1; m += 1
-            print('  Number of errors: %d' % errors)
+            print('  Number of errors: %d \n' % errors, self.driver.current_url)
             self.files += 1
         except AssertionError:
             print("File '%s' not found" % file_names[self.files])

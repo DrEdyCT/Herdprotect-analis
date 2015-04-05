@@ -7,7 +7,7 @@ import os
 import win32api
 import pefile
 
-folder = os.path.join("E:/")
+folder = os.path.join("C:/Fiels/")
 file_list = [folder + i for i in os.listdir(folder) if os.path.isfile(folder + i)]
 file_names = list()
 md5_list = list()
